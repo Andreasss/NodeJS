@@ -33,7 +33,7 @@ server.get("/", function(request, response){
 server.get("/xwx", function(request, response){
   var myName = request.query.name;
   if (myName === undefined){
-    myName = "KSOPISO EMEIS KAI MIN SE MELEI!";
+    myName = "Andreas th";
   }
   response.render("great", {
     name: myName,
