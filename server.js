@@ -35,15 +35,15 @@ var server = http.createServer(function(request, response) {
   if (u.pathname === "/") {
     returnHTML("index.html", response);
   }
-  else if (u.pathname === "/omonoia") {
-    returnJSON("OMONOIA1948", response);
+  else if (u.pathname === "/dog") {
+    returnJSON("DOGGO", response);
   }
-  else if (u.pathname === "/omonoialtd") {
+  else if (u.pathname === "/dogx") {
     //Print in the page the query of the path (after the "?")
     var name = u.query.name;
     console.log(name);
       var returnData = {
-        "response": "OmonoiaLTD " + name
+        "response": "doggox " + name
       }
       returnJSON(returnData, response);
   }
